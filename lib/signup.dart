@@ -2,7 +2,7 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import './textfield.dart';
-
+import 'login.dart';
 class Signup extends StatelessWidget {
   final Function()? onTap;
   Signup({Key? key, this.onTap}) : super(key: key);
@@ -123,19 +123,26 @@ class Signup extends StatelessWidget {
                 )),
             const SizedBox(height: 15),
             GestureDetector(
-                onTap: onTap,
+                onTap: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (_) => MyHomePage(
+                                title: 'Mind Mate',
+                              )));
+                },
                 child: Container(
                     padding: const EdgeInsets.all(10),
                     margin: const EdgeInsets.symmetric(horizontal: 110.0),
                     decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Center(
                       child: Text(
                         'Login',
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontWeight: FontWeight.bold,
                             fontSize: 16),
                       ),
