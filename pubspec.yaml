@@ -50,6 +50,15 @@ flutter:
     - assets/images/
     - assets/images/logo.jpeg
     - assets/images/save.png
+    - assets/images/relax.png
+    - assets/images/Game.png
+    - assets/images/cinema.png
+    - assets/images/date.png
+    - assets/images/reading.png
+    - assets/images/eathealthy.png
+    - assets/images/shopping.png
+    - assets/images/exercise.png
+    - assets/images/ssave.png
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 

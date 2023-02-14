@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import '/mood.dart';
+import 'home.dart';
 
 void main() => runApp(TakeApp());
 
@@ -144,7 +145,14 @@ class _MyHomeState extends State<MyHome> {
                 height: 20.0,
               ),
               InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) => MyHomePage(
+                                  title: 'Mind Mate',
+                                )));
+                  },
                   child: Column(mainAxisAlignment: MainAxisAlignment.center,
                       // ignore: prefer_const_literals_to_create_immutables
                       children: <Widget>[
