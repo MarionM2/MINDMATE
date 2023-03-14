@@ -1,5 +1,4 @@
-# MINDMATE
-
+# MINDMATE COHORT2 GROUP3
 A new Flutter project created with https://flutlab.io
 
 ## Group memebers and contribution:
