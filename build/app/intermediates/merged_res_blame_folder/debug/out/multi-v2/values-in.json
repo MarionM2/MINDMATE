@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Hp\\Desktop\\trial\\MINDMATE\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-in\\values-in.xml",
+            "outputFile": "C:\\Users\\Hp\\Desktop\\Okay\\MINDMATE\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-in\\values-in.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\821511f913e1cabdbdc4e9c74ff3c2d3\\transformed\\jetified-play-services-base-18.0.1\\res\\values-in\\values.xml",

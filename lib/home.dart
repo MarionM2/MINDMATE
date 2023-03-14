@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'anonymouschat.dart';
 import 'talktoaprofessional.dart';
+import 'meditation1.dart';
+import 'meditation2.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -41,7 +43,14 @@ class HomePage extends StatelessWidget {
                 padding: EdgeInsets.all(4.0),
                 child: GridTile(
                   child: ElevatedButton.icon(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MyApp(),
+                        ),
+                      );
+                    },
                     icon: Icon(
                       // <-- Icon
                       Icons.person,
@@ -58,7 +67,14 @@ class HomePage extends StatelessWidget {
                 padding: EdgeInsets.all(4.0),
                 child: GridTile(
                   child: ElevatedButton.icon(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ProductPage(),
+                        ),
+                      );
+                    },
                     icon: Icon(
                       // <-- Icon
                       Icons.backpack_rounded,
@@ -133,7 +149,14 @@ class HomePage extends StatelessWidget {
               icon: Icon(Icons.edit),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyApp(),
+                  ),
+                );
+              },
               icon: Icon(Icons.mediation),
             ),
             IconButton(

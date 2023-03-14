@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Hp\\Desktop\\trial\\MINDMATE\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Hp\\Desktop\\Okay\\MINDMATE\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\c74696a43148020bcff2fd607cb1a7b7\\transformed\\core-1.6.0\\res\\values\\values.xml",
@@ -95,7 +95,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Hp\\Desktop\\trial\\MINDMATE\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\Hp\\Desktop\\Okay\\MINDMATE\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
