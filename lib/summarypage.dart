@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home.dart';
 
 class SummaryPage extends StatelessWidget {
   final String activity;
@@ -65,7 +66,12 @@ class SummaryPage extends StatelessWidget {
               SizedBox(height: 10.0),
               ElevatedButton.icon(
                 onPressed: () {
-                  // TODO: navigate to next page
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomePage(),
+                    ),
+                  );
                 },
                 icon: Icon(Icons.arrow_forward),
                 label: Text('Next'),
