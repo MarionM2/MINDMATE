@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'anonymouschat.dart';
+import 'talktoaprofessional.dart';
+import 'meditation1.dart';
+import 'meditation2.dart';
+import 'home.dart';
 
 class User {
   final String name;
@@ -6,6 +11,22 @@ class User {
   User({required this.name});
 
   // User({required this.name, required this.imageUrl});
+}
+
+class ProChatPage extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Mind Mate',
+      home: ChatPage(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: Color.fromARGB(255, 80, 165, 94),
+        ),
+      ),
+    );
+  }
 }
 
 class ChatPage extends StatefulWidget {
@@ -26,50 +47,90 @@ class _ChatPageState extends State<ChatPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Talk to a professional'),
-      ),
-      body: GridView.count(
-        crossAxisCount: 1,
-        childAspectRatio: 9,
-        children: _users
-            .map((user) => GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (_) => ChatScreen(
-                                user: user,
-                              )),
-                    );
-                  },
-                  child: SizedBox(
-                    height: 2,
-                    width: 2,
-                    child: Card(
-                      color: Color.fromARGB(255, 93, 150, 95),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          // Image.network(
-                          //   user.imageUrl,
-                          //   fit: BoxFit.cover,
-                          // ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              user.name,
-                              style: TextStyle(color: Colors.white),
+        appBar: AppBar(
+          title: Text('Talk to a professional'),
+        ),
+        body: GridView.count(
+          crossAxisCount: 1,
+          childAspectRatio: 9,
+          children: _users
+              .map((user) => GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) => ChatScreen(
+                                  user: user,
+                                )),
+                      );
+                    },
+                    child: SizedBox(
+                      height: 2,
+                      width: 2,
+                      child: Card(
+                        color: Color.fromARGB(255, 93, 150, 95),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            // Image.network(
+                            //   user.imageUrl,
+                            //   fit: BoxFit.cover,
+                            // ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                user.name,
+                                style: TextStyle(color: Colors.white),
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
+                  ))
+              .toList(),
+        ),
+        bottomNavigationBar: BottomAppBar(
+            child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => myHomePage(),
+                    ));
+              },
+              icon: Icon(Icons.home),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.edit),
+            ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyApp(),
                   ),
-                ))
-            .toList(),
-      ),
-    );
+                );
+              },
+              icon: Icon(Icons.person),
+            ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => JoinChatPage(),
+                    ));
+              },
+              icon: Icon(Icons.chat_bubble),
+            ),
+          ],
+        )));
   }
 }
 

@@ -41,21 +41,22 @@ class SummaryPage extends StatelessWidget {
                   'Your notes:',
                   style: TextStyle(
                     fontSize: 24.0,
+                    fontFamily: 'Trajan Pro',
                   ),
                 ),
               ),
-              SizedBox(height: 5.0),
+              SizedBox(height: 10.0),
               Center(
                 child: Text(
                   note,
-                  maxLines: 5, // Maximum number of lines
+                  maxLines: 7, // Maximum number of lines
                   overflow: TextOverflow
                       .ellipsis, // What to do if text exceeds maximum lines
 
                   style: TextStyle(fontSize: 15.0, fontFamily: "Schyler"),
                 ),
               ),
-              SizedBox(height: 15.0),
+              SizedBox(height: 150.0),
               Text(
                 "Let's Explore more your feeling",
                 style: TextStyle(
@@ -69,7 +70,7 @@ class SummaryPage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomePage(),
+                      builder: (context) => myHomePage(),
                     ),
                   );
                 },

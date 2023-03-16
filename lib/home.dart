@@ -4,6 +4,22 @@ import 'talktoaprofessional.dart';
 import 'meditation1.dart';
 import 'meditation2.dart';
 
+class myHomePage extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Mind Mate',
+      home: HomePage(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: Color.fromARGB(255, 80, 165, 94),
+        ),
+      ),
+    );
+  }
+}
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -95,7 +111,7 @@ class HomePage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => JoinChatPage(),
+                          builder: (context) => AnChatPage(),
                         ),
                       );
                     },
@@ -119,7 +135,7 @@ class HomePage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ChatPage(),
+                          builder: (context) => ProChatPage(),
                         ),
                       );
                     },
@@ -157,7 +173,7 @@ class HomePage extends StatelessWidget {
                   ),
                 );
               },
-              icon: Icon(Icons.mediation),
+              icon: Icon(Icons.person),
             ),
             IconButton(
               onPressed: () {

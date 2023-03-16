@@ -132,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomePage(),
+                      builder: (context) => myHomePage(),
                     ));
               },
               icon: Icon(Icons.home),
@@ -150,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 );
               },
-              icon: Icon(Icons.mediation),
+              icon: Icon(Icons.person),
             ),
             IconButton(
               onPressed: () {

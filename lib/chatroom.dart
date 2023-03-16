@@ -1,5 +1,21 @@
 import 'package:flutter/material.dart';
 
+class MyChatPage extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Mind Mate',
+      home: ChatRoomPage(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: Color.fromARGB(255, 80, 165, 94),
+        ),
+      ),
+    );
+  }
+}
+
 class ChatRoomPage extends StatefulWidget {
   const ChatRoomPage({Key? key}) : super(key: key);
 

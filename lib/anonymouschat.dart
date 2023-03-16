@@ -2,6 +2,22 @@ import 'package:flutter/material.dart';
 import 'chatroom.dart';
 import 'home.dart';
 
+class AnChatPage extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Mind Mate',
+      home: JoinChatPage(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: Color.fromARGB(255, 80, 165, 94),
+        ),
+      ),
+    );
+  }
+}
+
 class JoinChatPage extends StatelessWidget {
   const JoinChatPage({Key? key}) : super(key: key);
 
