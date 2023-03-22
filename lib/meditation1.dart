@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'meditation2.dart';
 import 'anonymouschat.dart';
 import 'home.dart';
+import 'package:helloworld/Diary_notes/first_diary_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -82,43 +83,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
-
-              // Container(
-              //   padding: EdgeInsets.symmetric(vertical: 10),
-              //   color: Colors.white,
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.spaceAround,
-              //     children: <Widget>[
-              //       Column(
-              //         children: <Widget>[
-              //           FaIcon(FontAwesomeIcons.calendar),
-              //           Text('Today')
-              //         ],
-              //       ),
-              //       Column(
-              //         children: <Widget>[
-              //           FaIcon(
-              //             FontAwesomeIcons.dumbbell,
-              //             color: Color.fromARGB(255, 25, 92, 28),
-              //           ),
-              //           Text(
-              //             'Calm',
-              //             style: TextStyle(
-              //                 color: Colors.green,
-              //                 fontWeight: FontWeight.w700,
-              //                 fontSize: 20),
-              //           )
-              //         ],
-              //       ),
-              //       Column(
-              //         children: <Widget>[
-              //           Icon(Icons.settings),
-              //           Text('Settings')
-              //         ],
-              //       ),
-              //     ],
-              //   ),
-              // )
             ],
           )
         ],
@@ -138,7 +102,10 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: Icon(Icons.home),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context, MaterialPageRoute(builder: (_) => Diary()));
+              },
               icon: Icon(Icons.edit),
             ),
             IconButton(
