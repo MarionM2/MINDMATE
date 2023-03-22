@@ -3,6 +3,8 @@ import 'anonymouschat.dart';
 import 'talktoaprofessional.dart';
 import 'meditation1.dart';
 import 'meditation2.dart';
+import 'package:helloworld/Diary_notes/first_diary_page.dart';
+
 
 class myHomePage extends StatelessWidget {
   // This widget is the root of your application.
@@ -40,7 +42,10 @@ class HomePage extends StatelessWidget {
                 padding: EdgeInsets.all(4.0),
                 child: GridTile(
                   child: ElevatedButton.icon(
-                    onPressed: () {},
+                    onPressed: () {
+                   Navigator.pushReplacement(
+                  context, MaterialPageRoute(builder: (_) => Diary()));
+            },
                     icon: Icon(
                       // <-- Icon
                       Icons.book,
@@ -48,6 +53,7 @@ class HomePage extends StatelessWidget {
                     ),
                     label: Text('Open diary'), // <-- Text
                   ),
+
                 ),
 
                 // backgroundColor: Colors.green,
@@ -174,6 +180,17 @@ class HomePage extends StatelessWidget {
                 );
               },
               icon: Icon(Icons.person),
+            ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Diary(),
+                  ),
+                );
+              },
+              icon: Icon(Icons.book),
             ),
             IconButton(
               onPressed: () {
