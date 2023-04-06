@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:helloworld/Diary_notes/first_diary_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class DiaryScreen extends StatefulWidget {
   @override
@@ -12,20 +13,33 @@ class _DiaryScreenState extends State<DiaryScreen> {
   final _titleController = TextEditingController();
   final _entryController = TextEditingController();
   final _firestore = FirebaseFirestore.instance;
+  String _userId = '';
+
+  @override
+  void initState() {
+    super.initState();
+    final user = FirebaseAuth.instance.currentUser;
+    if (user != null) {
+      _userId = user.uid;
+    }
+  }
 
   void _saveEntry(String fileName) async {
     if (_formKey.currentState!.validate()) {
-      await _firestore.collection('diary_entries').add({
-        'title': _titleController.text,
-        'entry': _entryController.text,
-        'fileName': fileName,
-        'timestamp': DateTime.now(),
-      });
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Entry saved')),
-      );
-      _titleController.clear();
-      _entryController.clear();
+      if (_userId.isNotEmpty) {
+        await _firestore.collection('diary_entries').add({
+          'title': _titleController.text,
+          'entry': _entryController.text,
+          'fileName': fileName,
+          'timestamp': DateTime.now(),
+          'userId': _userId,
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Entry saved')),
+        );
+        _titleController.clear();
+        _entryController.clear();
+      }
     }
   }
 
@@ -68,7 +82,7 @@ class _DiaryScreenState extends State<DiaryScreen> {
                   maxLines: null,
                   decoration: InputDecoration(
                     contentPadding:
-                    EdgeInsets.symmetric(vertical: 150, horizontal: 20),
+                        EdgeInsets.symmetric(vertical: 150, horizontal: 20),
                     hintText: 'Enter your note here',
                     border: OutlineInputBorder(),
                   ),

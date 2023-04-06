@@ -1,114 +1,187 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_database/firebase_database.dart';
-import 'package:flutter/material.dart';
-import 'package:helloworld/Diary_notes/edit.dart';
-import 'package:helloworld/Diary_notes/first_diary_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:helloworld/Diary_notes/new.dart';
+import 'package:helloworld/Diary_notes/first_diary_page.dart';
+import 'package:flutter/material.dart';
+import 'edit.dart';
 
-class DiaryListScreen extends StatefulWidget {
+class DiaryListScreens extends StatefulWidget {
   @override
-  _DiaryListScreenState createState() => _DiaryListScreenState();
+  _DiaryListScreensState createState() => _DiaryListScreensState();
 }
 
-class _DiaryListScreenState extends State<DiaryListScreen> {
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  final FirebaseAuth _auth = FirebaseAuth.instance;
+class _DiaryListScreensState extends State<DiaryListScreens> {
+  final _firestore = FirebaseFirestore.instance;
+  late final User _user;
+
+  @override
+  void initState() {
+    super.initState();
+    _user = FirebaseAuth.instance.currentUser!;
+  }
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder<User?>(
-        stream: _auth.authStateChanges(),
-        builder: (BuildContext context, AsyncSnapshot<User?> snapshot) {
-          String currentUserUid = '';
-          if (snapshot.hasData) {
-            currentUserUid = snapshot.data!.uid;
-          }
-          return Scaffold(
-              appBar: AppBar(
-                leading: IconButton(
-                  icon: Icon(Icons.arrow_back),
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                        context, MaterialPageRoute(builder: (_) => Diary()));
-                  },
-                ),
-                title: Text('MINDMATE'),
-                backgroundColor: Color.fromRGBO(80, 165, 112, 100),
-                centerTitle: true,
-              ),
-              body: StreamBuilder<QuerySnapshot>(
-                  stream: _firestore
-                      .collection('diary_entries')
-                      .where('uid', isEqualTo: currentUserUid)
-                      .snapshots(),
-                  builder: (BuildContext context,
-                      AsyncSnapshot<QuerySnapshot> snapshot) {
-                    if (snapshot.hasError) {
-                      return Text('Error: ${snapshot.error}');
-                    }
-                    if (snapshot.connectionState == ConnectionState.waiting) {
-                      if (snapshot.data?.docs.isEmpty ?? true) {
-                        return Center(
-                          child: Text("No notes yet. Start writing!"),
-                        );
-                      }
-                      return CircularProgressIndicator();
-                    }
-                    List<Widget> entries = [];
-                    snapshot.data!.docs.forEach((doc) {
-                      Map<String, dynamic>? data =
-                          doc.data() as Map<String, dynamic>?;
-                      if (data != null) {
-                        String? entry = data['entry'] as String?;
-                        String? fileName = data['fileName'] as String?;
-                        DateTime? timestamp = data['timestamp']?.toDate();
-                        String? title = data['title'] as String?;
-                        if (entry != null &&
-                            fileName != null &&
-                            timestamp != null &&
-                            title != null) {
-                          entries.add(ListTile(
-                            title: Text(title),
-                            subtitle: Text(entry),
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (_) => EditDiaryScreen(
-                                    title: title,
-                                    entry: entry,
-                                    fileName: fileName,
-                                    timestamp: timestamp,
-                                    docId: doc.id,
-                                  ),
-                                ),
-                              );
-                            },
-                          ));
-                        }
-                      }
-                    });
-                    if (entries.isEmpty) {
-                      return Center(
-                          child: GestureDetector(
-                              child: Text(
-                                  'No notes yet. Click to start writing!',
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(80, 165, 112, 100),
-                                      fontSize: 20)),
-                              onTap: () {
-                                Navigator.pushReplacement(
+    return Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pushReplacement(
+                  context, MaterialPageRoute(builder: (_) => Diary()));
+            },
+          ),
+          title: Text('MIND MATE'),
+          backgroundColor: Color.fromRGBO(80, 165, 112, 100),
+          centerTitle: true,
+        ),
+        body: SafeArea(
+            child: SingleChildScrollView(
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+              const SizedBox(height: 5),
+              Padding(
+                  padding:
+                      EdgeInsets.only(left: 0, bottom: 20, right: 0, top: 40),
+                  child: Text('Diary Notes',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold))),
+              const SizedBox(height: 10),
+              StreamBuilder<QuerySnapshot>(
+                stream: _firestore
+                    .collection('diary_entries')
+                    .where('userId', isEqualTo: _user.uid)
+                    .orderBy('timestamp', descending: true)
+                    .snapshots(),
+                builder: (context, snapshot) {
+                  if (snapshot.hasData && snapshot.data!.docs.isNotEmpty) {
+                    final diary_entries = snapshot.data!.docs;
+                    return SizedBox(
+                        height: MediaQuery.of(context).size.height - 200,
+                        child: ListView.builder(
+                          itemCount: diary_entries.length,
+                          itemBuilder: (context, index) {
+                            final entry = diary_entries[index];
+                            final title = entry['title'];
+                            final date = entry['timestamp'].toDate();
+
+                            return Card(
+                              margin: EdgeInsets.all(10.0),
+                              child: ListTile(
+                                title: Text(title,
+                                    style: TextStyle(
+                                        color:
+                                            Color.fromRGBO(80, 165, 112, 100),
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold)),
+                                subtitle: Text(date.toString()),
+                                onTap: () {
+                                  Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (_) => DiaryScreen(),
-                                    ));
-                              }));
-                    }
-                    return ListView(
-                      children: entries,
-                    );
-                  }));
-        });
+                                      builder: (context) =>
+                                          DiaryEntryScreen(entry: entry),
+                                    ),
+                                  );
+                                },
+                              ),
+                            );
+                          },
+                        ));
+                  } else {
+                    return Center(
+                        child: Text('You have no diary entries yet.'));
+                  }
+                },
+              )
+            ]))));
+  }
+}
+
+class DiaryEntryScreen extends StatelessWidget {
+  final QueryDocumentSnapshot<Object?> entry;
+
+  const DiaryEntryScreen({Key? key, required this.entry}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final title = entry['title'];
+    final content = entry['entry'];
+    final date = entry['timestamp'].toDate();
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('MINDMATE'),
+        backgroundColor: Color.fromRGBO(80, 165, 112, 100),
+        centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.edit),
+            onPressed: () {
+              // Navigate to the edit diary entry screen
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => EditDiaryEntryScreen(entry: entry),
+                ),
+              );
+            },
+          ),
+          IconButton(
+            icon: Icon(Icons.delete),
+            onPressed: () async {
+              // Show confirmation dialog before deleting the entry
+              final confirmed = await showDialog<bool>(
+                context: context,
+                builder: (context) => AlertDialog(
+                  title: Text('Delete Entry'),
+                  content: Text('Are you sure you want to delete this entry?'),
+                  actions: [
+                    TextButton(
+                      onPressed: () => Navigator.pop(context, false),
+                      child: Text('Cancel'),
+                    ),
+                    TextButton(
+                      onPressed: () => Navigator.pop(context, true),
+                      child: Text('Delete'),
+                    ),
+                  ],
+                ),
+              );
+
+              // If the user confirms, delete the entry
+              if (confirmed == true) {
+                await entry.reference.delete();
+                Navigator.pop(context);
+              }
+            },
+          ),
+        ],
+      ),
+      body: Padding(
+        padding: EdgeInsets.only(left: 30, bottom: 20, right: 10, top: 30),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(title,
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold)),
+            SizedBox(height: 10.0),
+            Text(date.toString()),
+            SizedBox(height: 40.0),
+            Text("Your Note",
+                style: TextStyle(
+                  color: Color.fromRGBO(80, 165, 112, 100),
+                )),
+            SizedBox(height: 40.0),
+            Text(content),
+          ],
+        ),
+      ),
+    );
   }
 }
