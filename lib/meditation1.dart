@@ -5,6 +5,7 @@ import 'anonymouschat.dart';
 import 'home.dart';
 import 'package:helloworld/Diary_notes/first_diary_page.dart';
 import 'findnearsthelp.dart';
+import 'calendar.dart';
 
 void main() {
   runApp(MyApp());
@@ -120,10 +121,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             IconButton(
               onPressed: () {
-                Navigator.pushReplacement(
-                    context, MaterialPageRoute(builder: (_) => Diary()));
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (_) => EventCalendarScreen()));
               },
-              icon: Icon(Icons.edit),
+              icon: const Icon(Icons.calendar_month),
             ),
             IconButton(
               onPressed: () {

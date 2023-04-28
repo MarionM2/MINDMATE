@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Hp\\Desktop\\finalm\\MINDMATE\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Hp\\Downloads\\MINDMATE\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\8ac4cdc8ddbb3d33325da378eabb8288\\transformed\\jetified-play-services-base-18.1.0\\res\\values\\values.xml",
@@ -95,24 +95,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\bbe2acdef82602a05682eee5963323e8\\transformed\\lifecycle-runtime-2.3.1\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "42",
-                        "endOffsets": "93"
-                    },
-                    "to": {
-                        "startLines": "105",
-                        "startColumns": "4",
-                        "startOffsets": "6434",
-                        "endColumns": "42",
-                        "endOffsets": "6472"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Hp\\Desktop\\finalm\\MINDMATE\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\Hp\\Downloads\\MINDMATE\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -128,6 +111,23 @@
                         "endLines": "135,138",
                         "endColumns": "12,12",
                         "endOffsets": "9594,9763"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\bbe2acdef82602a05682eee5963323e8\\transformed\\lifecycle-runtime-2.3.1\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    },
+                    "to": {
+                        "startLines": "105",
+                        "startColumns": "4",
+                        "startOffsets": "6434",
+                        "endColumns": "42",
+                        "endOffsets": "6472"
                     }
                 }
             ]

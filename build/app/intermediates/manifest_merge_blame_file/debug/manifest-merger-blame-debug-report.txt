@@ -12,11 +12,11 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\Hp\Desktop\finalm\MINDMATE\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\Hp\Desktop\finalm\MINDMATE\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->C:\Users\Hp\Downloads\MINDMATE\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\Hp\Downloads\MINDMATE\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-15-->[:geolocator_android] C:\Users\Hp\Desktop\finalm\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-77
-15-->[:geolocator_android] C:\Users\Hp\Desktop\finalm\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-74
+15-->[:geolocator_android] C:\Users\Hp\Downloads\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-77
+15-->[:geolocator_android] C:\Users\Hp\Downloads\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-74
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 16-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:26:5-79
 16-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:26:22-76
@@ -73,43 +73,43 @@
 61            android:value="2" />
 62
 63        <service
-63-->[:firebase_auth] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+63-->[:firebase_auth] C:\Users\Hp\Downloads\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 64            android:name="com.google.firebase.components.ComponentDiscoveryService"
-64-->[:firebase_auth] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+64-->[:firebase_auth] C:\Users\Hp\Downloads\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 65            android:directBootAware="true"
 65-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Hp\.gradle\caches\transforms-3\9c658d9b7985782e34b21ce787e45741\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
 66            android:exported="false" >
 66-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:68:13-37
 67            <meta-data
-67-->[:firebase_auth] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+67-->[:firebase_auth] C:\Users\Hp\Downloads\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 68                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-68-->[:firebase_auth] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+68-->[:firebase_auth] C:\Users\Hp\Downloads\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 69                android:value="com.google.firebase.components.ComponentRegistrar" />
-69-->[:firebase_auth] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+69-->[:firebase_auth] C:\Users\Hp\Downloads\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 70            <meta-data
-70-->[:firebase_database] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+70-->[:firebase_database] C:\Users\Hp\Downloads\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 71                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
-71-->[:firebase_database] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
+71-->[:firebase_database] C:\Users\Hp\Downloads\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
 72                android:value="com.google.firebase.components.ComponentRegistrar" />
-72-->[:firebase_database] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+72-->[:firebase_database] C:\Users\Hp\Downloads\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 73            <meta-data
-73-->[:firebase_storage] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+73-->[:firebase_storage] C:\Users\Hp\Downloads\MINDMATE\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 74                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
-74-->[:firebase_storage] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
+74-->[:firebase_storage] C:\Users\Hp\Downloads\MINDMATE\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
 75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[:firebase_storage] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+75-->[:firebase_storage] C:\Users\Hp\Downloads\MINDMATE\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 76            <meta-data
-76-->[:cloud_firestore] C:\Users\Hp\Desktop\finalm\MINDMATE\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+76-->[:cloud_firestore] C:\Users\Hp\Downloads\MINDMATE\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-77-->[:cloud_firestore] C:\Users\Hp\Desktop\finalm\MINDMATE\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
+77-->[:cloud_firestore] C:\Users\Hp\Downloads\MINDMATE\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
 78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[:cloud_firestore] C:\Users\Hp\Desktop\finalm\MINDMATE\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+78-->[:cloud_firestore] C:\Users\Hp\Downloads\MINDMATE\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 79            <meta-data
-79-->[:firebase_core] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+79-->[:firebase_core] C:\Users\Hp\Downloads\MINDMATE\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 80                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-80-->[:firebase_core] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+80-->[:firebase_core] C:\Users\Hp\Downloads\MINDMATE\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[:firebase_core] C:\Users\Hp\Desktop\finalm\MINDMATE\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+81-->[:firebase_core] C:\Users\Hp\Downloads\MINDMATE\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 82            <meta-data
 82-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:69:13-71:85
 83                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -136,15 +136,15 @@
 93-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Hp\.gradle\caches\transforms-3\46b1aeb25bd808481ced9eb6cf2ee7fb\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:33:17-82
 94        </service>
 95        <service
-95-->[:geolocator_android] C:\Users\Hp\Desktop\finalm\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:56
+95-->[:geolocator_android] C:\Users\Hp\Downloads\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:56
 96            android:name="com.baseflow.geolocator.GeolocatorLocationService"
-96-->[:geolocator_android] C:\Users\Hp\Desktop\finalm\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-77
+96-->[:geolocator_android] C:\Users\Hp\Downloads\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-77
 97            android:enabled="true"
-97-->[:geolocator_android] C:\Users\Hp\Desktop\finalm\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-35
+97-->[:geolocator_android] C:\Users\Hp\Downloads\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-35
 98            android:exported="false"
-98-->[:geolocator_android] C:\Users\Hp\Desktop\finalm\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-37
+98-->[:geolocator_android] C:\Users\Hp\Downloads\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-37
 99            android:foregroundServiceType="location" />
-99-->[:geolocator_android] C:\Users\Hp\Desktop\finalm\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-53
+99-->[:geolocator_android] C:\Users\Hp\Downloads\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-53
 100
 101        <activity
 101-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:29:9-46:20
