@@ -25,12 +25,17 @@ class ChatRoomPage extends StatefulWidget {
 
 class _ChatRoomPageState extends State<ChatRoomPage> {
   final TextEditingController _textEditingController = TextEditingController();
-  final List<String> _messages = [];
+  final List<Message> _messages = [];
 
   void _sendMessage() {
     if (_textEditingController.text.isNotEmpty) {
       setState(() {
-        _messages.add(_textEditingController.text);
+        _messages.add(
+          Message(
+            text: _textEditingController.text,
+            isCurrentUser: true,
+          ),
+        );
         _textEditingController.clear();
       });
     }
@@ -45,15 +50,31 @@ class _ChatRoomPageState extends State<ChatRoomPage> {
       body: Column(
         children: [
           Expanded(
-            child: ListView.builder(
-              padding: EdgeInsets.all(8),
-              itemCount: _messages.length,
-              itemBuilder: (BuildContext context, int index) {
-                return Padding(
-                  padding: EdgeInsets.symmetric(vertical: 4),
-                  child: Text(_messages[index]),
-                );
-              },
+            child: SingleChildScrollView(
+              child: ListView.builder(
+                shrinkWrap: true,
+                padding: EdgeInsets.all(8),
+                itemCount: _messages.length,
+                itemBuilder: (BuildContext context, int index) {
+                  if (_messages[index].isCurrentUser) {
+                    return Padding(
+                      padding: EdgeInsets.symmetric(vertical: 4),
+                      child: Text(
+                        _messages[index].text,
+                        style: TextStyle(color: Colors.black),
+                      ),
+                    );
+                  } else {
+                    return Padding(
+                      padding: EdgeInsets.symmetric(vertical: 4),
+                      child: Text(
+                        _messages[index].text,
+                        style: TextStyle(color: Colors.green),
+                      ),
+                    );
+                  }
+                },
+              ),
             ),
           ),
           Divider(height: 1),
@@ -84,4 +105,11 @@ class _ChatRoomPageState extends State<ChatRoomPage> {
       ),
     );
   }
+}
+
+class Message {
+  final String text;
+  final bool isCurrentUser;
+
+  Message({required this.text, required this.isCurrentUser});
 }

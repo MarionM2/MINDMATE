@@ -30,6 +30,12 @@ dependencies:
   path:
   cupertino_icons: ^1.0.2
   font_awesome_flutter: ^10.4.0
+  mockito: ^5.4.0
+  flutter_map: ^0.14.0
+  geolocator: ^9.0.2
+  cached_network_image: ^3.1.0
+  # flutter_map_cached_provider: ^0.3.0
+
 
 dev_dependencies:
   flutter_test:

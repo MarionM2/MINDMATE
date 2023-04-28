@@ -1,6 +1,23 @@
 import 'package:flutter/material.dart';
 import 'chatroom.dart';
 import 'home.dart';
+import 'chat_firebase.dart';
+
+class MyChatPage extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Mind Mate',
+      home: AnChatPage(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: Color.fromARGB(255, 80, 165, 94),
+        ),
+      ),
+    );
+  }
+}
 
 class AnChatPage extends StatelessWidget {
   // This widget is the root of your application.
@@ -47,7 +64,7 @@ class JoinChatPage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ChatRoomPage()),
+                  MaterialPageRoute(builder: (context) => ChatScreen()),
                 );
               },
               child: Text('Yes'),

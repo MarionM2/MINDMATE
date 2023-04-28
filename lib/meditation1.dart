@@ -4,9 +4,26 @@ import 'meditation2.dart';
 import 'anonymouschat.dart';
 import 'home.dart';
 import 'package:helloworld/Diary_notes/first_diary_page.dart';
+import 'findnearsthelp.dart';
 
 void main() {
   runApp(MyApp());
+}
+
+class MyChatPage extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Mind Mate',
+      home: MyHomePage(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: Color.fromARGB(255, 80, 165, 94),
+        ),
+      ),
+    );
+  }
 }
 
 class MyApp extends StatelessWidget {
@@ -96,10 +113,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => myHomePage(),
+                      builder: (context) => MapPage(),
                     ));
               },
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.map),
             ),
             IconButton(
               onPressed: () {
@@ -113,18 +130,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MyApp(),
+                    builder: (context) => myHomePage(),
                   ),
                 );
               },
-              icon: Icon(Icons.person),
+              icon: Icon(Icons.home),
             ),
             IconButton(
               onPressed: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => JoinChatPage(),
+                      builder: (context) => AnChatPage(),
                     ));
               },
               icon: Icon(Icons.chat_bubble),

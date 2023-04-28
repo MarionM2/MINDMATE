@@ -4,6 +4,7 @@ import 'talktoaprofessional.dart';
 import 'meditation1.dart';
 import 'meditation2.dart';
 import 'package:helloworld/Diary_notes/first_diary_page.dart';
+import 'chat_firebase.dart';
 
 class myHomePage extends StatelessWidget {
   // This widget is the root of your application.
@@ -40,7 +41,7 @@ class HomePage extends StatelessWidget {
               child: Container(
                 padding: EdgeInsets.all(4.0),
                 child: GridTile(
-                  child: ElevatedButton.icon(
+                  child:ElevatedButton.icon(
                     onPressed: () {
                       Navigator.pushReplacement(
                           context, MaterialPageRoute(builder: (_) => Diary()));
