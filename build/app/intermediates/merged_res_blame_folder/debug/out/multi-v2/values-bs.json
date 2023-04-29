@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Hp\\Downloads\\MINDMATE\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
+            "outputFile": "C:\\Users\\Hp\\Desktop\\MobileDEv\\MINDMATE\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\6939cc47875af9510d8c5eaf507d2cbe\\transformed\\browser-1.4.0\\res\\values-bs\\values-bs.xml",
