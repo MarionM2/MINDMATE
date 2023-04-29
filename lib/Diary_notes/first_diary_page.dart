@@ -64,7 +64,7 @@ class Diary extends StatelessWidget {
                           'Hello ' + user.email!,
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 8.0,
+                            fontSize: 15.0,
                           ),
                         ),
                       ],
