@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => MapPage(),
+                      builder: (context) => NearestHospital(),
                     ));
               },
               icon: Icon(Icons.map),

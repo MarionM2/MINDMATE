@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:helloworld/Diary_notes/new.dart';
 import 'package:helloworld/components/homepage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:helloworld/Diary_notes/d.dart';
+import 'package:helloworld/home.dart';
 
 class Diary extends StatelessWidget {
   Diary({super.key});
@@ -23,8 +25,8 @@ class Diary extends StatelessWidget {
                 IconButton(
                   icon: Icon(Icons.home),
                   onPressed: () {
-                    Navigator.pushReplacement(
-                        context, MaterialPageRoute(builder: (_) => HomePage()));
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (_) => myHomePage()));
                   },
                 ),
               ],

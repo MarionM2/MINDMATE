@@ -266,10 +266,22 @@
       "languageVersion": "2.17"
     },
     {
-      "name": "flutter_map",
-      "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_map-0.14.0",
+      "name": "flutter_local_notifications",
+      "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_local_notifications-5.0.0+4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_local_notifications_platform_interface",
+      "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_local_notifications_platform_interface-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_map",
+      "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_map-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "flutter_test",
@@ -286,6 +298,30 @@
     {
       "name": "font_awesome_flutter",
       "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/font_awesome_flutter-10.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "geocoding",
+      "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/geocoding-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "geocoding_android",
+      "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/geocoding_android-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "geocoding_ios",
+      "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/geocoding_ios-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "geocoding_platform_interface",
+      "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/geocoding_platform_interface-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -330,6 +366,12 @@
       "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/glob-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.15"
+    },
+    {
+      "name": "hidden_drawer_menu",
+      "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/hidden_drawer_menu-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "http",
@@ -488,6 +530,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "polylabel",
+      "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/polylabel-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.13"
+    },
+    {
       "name": "positioned_tap_detector_2",
       "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/positioned_tap_detector_2-1.0.4",
       "packageUri": "lib/",
@@ -596,8 +644,8 @@
       "languageVersion": "2.18"
     },
     {
-      "name": "transparent_image",
-      "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/transparent_image-2.0.1",
+      "name": "timezone",
+      "rootUri": "file:///C:/Users/Hp/AppData/Local/Pub/Cache/hosted/pub.dev/timezone-0.7.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -668,7 +716,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-04-29T19:11:25.437958Z",
+  "generated": "2023-05-02T17:58:31.019548Z",
   "generator": "pub",
   "generatorVersion": "2.19.4"
 }

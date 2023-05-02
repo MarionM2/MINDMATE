@@ -31,11 +31,17 @@ dependencies:
   cupertino_icons: ^1.0.2
   font_awesome_flutter: ^10.4.0
   mockito: ^5.4.0
-  flutter_map: ^0.14.0
-  geolocator: ^9.0.2
+  hidden_drawer_menu: ^3.0.1
+  flutter_map: ^3.0.0
+  # geolocator: ^9.0.2
   cached_network_image: ^3.1.0
   table_calendar: ^3.0.8
   # flutter_map_cached_provider: ^0.3.0
+  flutter_local_notifications: ^5.0.0
+  latlong2: ^0.8.1
+  geolocator: ^9.0.2
+  geocoding: any
+
 
 
 dev_dependencies:
