@@ -9,6 +9,8 @@ class MyTextField extends StatelessWidget {
   const MyTextField(
       {super.key, required this.controller, required this.obscureText});
 
+  // sget hintText => null;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
