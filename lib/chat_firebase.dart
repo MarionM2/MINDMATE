@@ -47,14 +47,14 @@ class _ChatScreenState extends State<ChatScreen> {
       ),
       body: Column(
         children: [
-          Container(
-            color: Colors.green, // Set background color to green
-            padding: EdgeInsets.all(8.0),
-            child: Text(
-              formattedDate, // Set current date
-              style: TextStyle(color: Colors.white),
-            ),
-          ),
+          // Container(
+          //   color: Colors.green, // Set background color to green
+          //   padding: EdgeInsets.all(8.0),
+          //   child: Text(
+          //     formattedDate, // Set current date
+          //     style: TextStyle(color: Colors.white),
+          //   ),
+          // ),
           Expanded(
             child: StreamBuilder<QuerySnapshot>(
               stream: _messageStream,
@@ -66,6 +66,8 @@ class _ChatScreenState extends State<ChatScreen> {
                 }
                 final messages = snapshot.data!.docs;
                 return ListView.builder(
+                  physics: AlwaysScrollableScrollPhysics(),
+                  shrinkWrap: true,
                   padding: EdgeInsets.symmetric(vertical: 16.0),
                   itemCount: messages.length,
                   itemBuilder: (context, index) {
@@ -77,8 +79,8 @@ class _ChatScreenState extends State<ChatScreen> {
                         isMe ? MainAxisAlignment.end : MainAxisAlignment.start;
                     final bubbleColor = isMe ? Colors.lightGreen : Colors.grey;
                     final bubbleTextStyle = isMe
-                        ? TextStyle(color: Colors.white)
-                        : TextStyle(color: Colors.black);
+                        ? const TextStyle(color: Colors.white)
+                        : const TextStyle(color: Colors.black);
 
                     return Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -103,7 +105,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
                               message['timestamp'].toDate().toString(),
                               style: TextStyle(
-                                color: Colors.grey,
+                                color: Color.fromARGB(255, 27, 25, 25),
                                 fontSize: 12.0,
                               ),
                             ),

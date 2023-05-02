@@ -36,7 +36,7 @@ class Chat {
   Stream<QuerySnapshot> getMessages() {
     return _firestore
         .collection('messages')
-        .orderBy('timestamp', descending: false)
+        .orderBy('timestamp', descending: true)
         .snapshots();
   }
 }
