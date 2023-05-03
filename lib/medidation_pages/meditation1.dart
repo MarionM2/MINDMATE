@@ -7,10 +7,6 @@ import 'package:helloworld/Diary_notes/first_diary_page.dart';
 import '../map/findnearsthelp.dart';
 import '../appointment_pages/calendar.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
 class MyChatPage extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -79,9 +75,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 alignment: Alignment.centerLeft,
                 padding: EdgeInsets.all(20),
                 child: Text(
-                  "Hello there! Welcome to MindMate",
+                  "Hello there! Welcome to MindMate resource center.",
                   style: TextStyle(
-                      fontSize: 40,
+                      fontSize: 30,
                       fontWeight: FontWeight.w700,
                       color: Colors.white),
                 ),
