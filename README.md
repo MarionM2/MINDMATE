@@ -10,6 +10,13 @@ A new Flutter project created with https://flutlab.io
 - [Project Tracker](https://docs.google.com/spreadsheets/d/1II3q7wnMt6v44dDY4I1ewVctd6EWvGQ4VenjHc3_5Z0/edit?usp=sharing)
 
 
+## Other relevant resources:
+- [Proposal](https://docs.google.com/document/d/1IKN0iqFb0ao3p1dpSfxVgEzQwNhwkbInvUVkQEFHsHo/edit?usp=sharing)
+- [Figma](https://www.figma.com/file/bZrpkDFsk7z4EOkMSnx2wB/MindMate?node-id=0%3A1&t=DsTeduDpO92YTOks-1)
+- [Documentation](https://docs.google.com/document/d/1t7JahvtBWPKNP9izKnB4ifTx9BT7n9GqbLck7robvbw/edit?usp=sharing)
+- Video presentation
+
+
 ## Purpose of the application
 Students' mental health is a serious problem that cannot be disregarded. Students are experiencing epidemic levels of mental health issues like anxiety, depression, stress, and substance addiction, which have a negative impact on their academic performance, interpersonal relationships, and general well-being. Unfortunately, many students encounter a number of obstacles to getting the care they require, including stigma, a lack of resources, and restricted access to mental health services, despite the growing demand for support in this area.
 Academic and social pressures of college life can exacerbate mental health issues, making it more difficult for students to get the help they require. Additionally, it can be challenging for students with mental health issues to ask for help and get the support they require because they frequently encounter stigma and discrimination.
