@@ -15,6 +15,8 @@ MERGED from [:geolocator_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geoloc
 MERGED from [:geolocator_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
 MERGED from [:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
+MERGED from [:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.android.recaptcha:recaptcha:18.0.1] C:\Users\Hp\.gradle\caches\transforms-3\8f5daf41040e84b2bbd1946dc75404c4\transformed\jetified-recaptcha-18.0.1\AndroidManifest.xml:7:5-20
@@ -70,6 +72,7 @@ MERGED from [:geolocator_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geoloc
 MERGED from [:sqflite] C:\Users\Hp\Desktop\push\MINDMATE\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:geocoding_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geocoding_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
+MERGED from [:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
 MERGED from [:path_provider_android] C:\Users\Hp\Desktop\push\MINDMATE\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.android.recaptcha:recaptcha:18.0.1] C:\Users\Hp\.gradle\caches\transforms-3\8f5daf41040e84b2bbd1946dc75404c4\transformed\jetified-recaptcha-18.0.1\AndroidManifest.xml:2:1-9:12
@@ -151,6 +154,8 @@ MERGED from [:geocoding_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geocodi
 MERGED from [:geocoding_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geocoding_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] C:\Users\Hp\Desktop\push\MINDMATE\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] C:\Users\Hp\Desktop\push\MINDMATE\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:21:5-23:64
@@ -367,6 +372,14 @@ action#com.htc.intent.action.QUICKBOOT_POWERON
 ADDED from [:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-82
 	android:name
 		ADDED from [:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:25-79
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\Hp\.gradle\caches\transforms-3\cbf9099730908837c6ebdbfb1263c942\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:12:5-79

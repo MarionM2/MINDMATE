@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'mentalhealth.dart';
 
 class MyChatPage extends StatelessWidget {
   // This widget is the root of your application.
@@ -23,6 +24,8 @@ class ProductPage extends StatefulWidget {
 }
 
 class _ProductPageState extends State<ProductPage> {
+  var child;
+
   @override
   Widget build(BuildContext context) {
     String selectedImg;
@@ -174,13 +177,6 @@ class _ProductPageState extends State<ProductPage> {
                                 sessionWidget('Session 2', false),
                               ],
                             ),
-                            //Row(
-                            //mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            //children: <Widget>[
-                            // sessionWidget('Session 3', false),
-                            // sessionWidget('Session 4', false),
-                            //],
-                            //),
                           ],
                         ),
                       ),
@@ -209,7 +205,7 @@ class _ProductPageState extends State<ProductPage> {
                                   blurRadius: 15,
                                   spreadRadius: 1)
                             ]),
-                        child: Row(
+                        child: Column(
                           children: <Widget>[
                             Container(
                               padding: const EdgeInsets.all(50),
@@ -218,25 +214,35 @@ class _ProductPageState extends State<ProductPage> {
                                       image: AssetImage(
                                           'assets/images/$selectedImg.png'))),
                             ),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const <Widget>[
-                                  Text(
-                                    'Basics 2',
-                                    style: TextStyle(
-                                        fontSize: 22,
-                                        fontWeight: FontWeight.w700),
+                            GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            MentalHealthResourcesPage()),
+                                  );
+                                },
+                                child: Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: const <Widget>[
+                                      Text(
+                                        'Basics 2',
+                                        style: TextStyle(
+                                            fontSize: 22,
+                                            fontWeight: FontWeight.w700),
+                                      ),
+                                      Text(
+                                        'Start and deepen your patience',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w600),
+                                      )
+                                    ],
                                   ),
-                                  Text(
-                                    'Start and deepen your patience',
-                                    style: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.w600),
-                                  )
-                                ],
-                              ),
-                            ),
+                                )),
                             IconButton(
                               onPressed: () {},
                               icon: const Icon(
@@ -255,42 +261,6 @@ class _ProductPageState extends State<ProductPage> {
                   ),
                 ),
               ),
-              Container(
-                padding: const EdgeInsets.symmetric(vertical: 10),
-                color: Colors.white,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    Column(
-                      children: const <Widget>[
-                        FaIcon(FontAwesomeIcons.calendar),
-                        Text('Today')
-                      ],
-                    ),
-                    Column(
-                      children: const <Widget>[
-                        FaIcon(
-                          FontAwesomeIcons.dumbbell,
-                          color: Color.fromARGB(255, 67, 114, 75),
-                        ),
-                        Text(
-                          'All Exercise',
-                          style: TextStyle(
-                              color: Color.fromARGB(255, 68, 107, 52),
-                              fontWeight: FontWeight.w700,
-                              fontSize: 20),
-                        )
-                      ],
-                    ),
-                    Column(
-                      children: const <Widget>[
-                        Icon(Icons.settings),
-                        Text('Settings')
-                      ],
-                    ),
-                  ],
-                ),
-              )
             ],
           )
         ],

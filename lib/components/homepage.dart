@@ -6,33 +6,6 @@ import 'package:flutter/material.dart';
 import '/mood.dart';
 // import 'package:hellowoactivities.dart';
 
-// class HomePage extends StatelessWidget {
-//   HomePage({super.key});
-
-//   final user = FirebaseAuth.instance.currentUser!;
-
-//   // sign user out method
-//   void signUserOut() {
-//     FirebaseAuth.instance.signOut();
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Colors.grey[300],
-//       appBar: AppBar(
-//         backgroundColor: Colors.grey[900],
-//         actions: [
-//           IconButton(
-//             onPressed: signUserOut,
-//             icon: Icon(Icons.logout),
-//           )
-//         ],
-//       ),
-//     );
-//   }
-// }
-
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -56,6 +29,7 @@ class MyHome extends StatefulWidget {
 
 class _MyHomeState extends State<MyHome> {
   DateTime selectedDate = DateTime.now();
+  String? youareFeeling;
 
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? picked = await showDatePicker(
@@ -118,6 +92,11 @@ class _MyHomeState extends State<MyHome> {
               Padding(
                 padding: const EdgeInsets.all(3.1),
                 child: GestureDetector(
+                 onTap:(){
+                  setState(() {     
+                    youareFeeling = 'Good';
+                  });
+                 }, 
                     child: Container(
                         padding: EdgeInsets.all(8),
                         margin: EdgeInsets.symmetric(horizontal: 10),
@@ -140,6 +119,11 @@ class _MyHomeState extends State<MyHome> {
               Padding(
                 padding: const EdgeInsets.all(3.1),
                 child: GestureDetector(
+                  onTap:(){
+                  setState(() {     
+                    youareFeeling = 'Okay';
+                  });
+                 }, 
                     child: Container(
                         padding: EdgeInsets.all(8),
                         margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -162,6 +146,11 @@ class _MyHomeState extends State<MyHome> {
               Padding(
                 padding: const EdgeInsets.all(3.1),
                 child: GestureDetector(
+                  onTap:(){
+                  setState(() {     
+                    youareFeeling = 'Bad';
+                  });
+                 }, 
                     child: Container(
                         padding: EdgeInsets.all(8),
                         margin: EdgeInsets.symmetric(horizontal: 10),
@@ -184,8 +173,13 @@ class _MyHomeState extends State<MyHome> {
               const SizedBox(
                 height: 20.0,
               ),
-              InkWell(
+              if (youareFeeling != null)
+              Text('youareFeeling: $youareFeeling'),
+         InkWell(
                   onTap: () {
+                  if (youareFeeling != null) {
+                  print('Selected option: $youareFeeling');
+                  }
                     Navigator.pushReplacement(
                         context, MaterialPageRoute(builder: (_) => MyApp()));
                   },
@@ -196,8 +190,12 @@ class _MyHomeState extends State<MyHome> {
                         ImageIcon(
                           AssetImage("assets/images/save.png"),
                           size: 30,
-                        ), // <-- Icon
-                      ])),
+                        ),
+                         SizedBox(height: 8), // Add some space between the image and text
+                         Text('Save'),
+                       // <-- Icon
+                      ])), 
+
             ]),
       ),
     );
