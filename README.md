@@ -1,11 +1,14 @@
 # MINDMATE COHORT2 GROUP3
 A new Flutter project created with https://flutlab.io
 
-## Group memebers and contribution:
+## Group members 
+- Maxine Beni 
+- Marion Maina 
+- Melissa Giramata
 
-- Maxine Beni : signup page,splash page,firebase,and diary.
-- Marion Maina : Login page,mood page,firebase,resources,meditation.
-- Melissa Giramata: activities page,summary page,chat,firebase and home.
+## Contribution:
+- (Project Tracker) <https://docs.google.com/spreadsheets/d/1II3q7wnMt6v44dDY4I1ewVctd6EWvGQ4VenjHc3_5Z0/edit?usp=sharing>
+
 
 ## Purpose of the application
 Students' mental health is a serious problem that cannot be disregarded. Students are experiencing epidemic levels of mental health issues like anxiety, depression, stress, and substance addiction, which have a negative impact on their academic performance, interpersonal relationships, and general well-being. Unfortunately, many students encounter a number of obstacles to getting the care they require, including stigma, a lack of resources, and restricted access to mental health services, despite the growing demand for support in this area.
