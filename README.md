@@ -7,7 +7,7 @@ A new Flutter project created with https://flutlab.io
 - Melissa Giramata
 
 ## Contribution:
-- (Project Tracker) <https://docs.google.com/spreadsheets/d/1II3q7wnMt6v44dDY4I1ewVctd6EWvGQ4VenjHc3_5Z0/edit?usp=sharing>
+- (Project Tracker)[https://docs.google.com/spreadsheets/d/1II3q7wnMt6v44dDY4I1ewVctd6EWvGQ4VenjHc3_5Z0/edit?usp=sharing]
 
 
 ## Purpose of the application
