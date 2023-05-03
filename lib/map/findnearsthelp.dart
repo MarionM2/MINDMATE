@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:geolocator/geolocator.dart';
-
+import 'package:helloworld/home.dart';
 import 'package:latlong2/latlong.dart';
 
 class NearestHospital extends StatefulWidget {
@@ -105,14 +105,17 @@ class _NearestHospitalState extends State<NearestHospital> {
             ),
             ElevatedButton(
               child: Text(
-                'Get Location',
+                'Go Back',
                 style: TextStyle(color: Colors.white),
               ),
-              onPressed: _getCurrentLocation,
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context, MaterialPageRoute(builder: (_) => myHomePage()));
+              },
             ),
-            _position != null
-                ? Text('Current Location: ' + _position.toString())
-                : Text(''),
+            // _position != null
+            //     ? Text('Current Location: ' + _position.toString())
+            //     : Text(''),
           ]),
     );
   }

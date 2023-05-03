@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import './main.dart';
-import './signup.dart';
+import '../main.dart';
+import 'signup.dart';
 
 class MyTextfield extends StatelessWidget {
   final controller;

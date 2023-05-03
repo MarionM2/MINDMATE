@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:helloworld/anonymouschat.dart';
+import 'package:helloworld/chat_pages/anonymouschat.dart';
 import 'package:helloworld/home.dart';
-import 'package:helloworld/chat_firebase.dart';
+import 'package:helloworld/chat_pages/chat_firebase.dart';
 import 'package:helloworld/main.dart';
 
 void main() {

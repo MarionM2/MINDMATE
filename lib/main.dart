@@ -2,9 +2,9 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import './splash.dart';
-import './signup.dart';
-import './login.dart';
-import './auth_page.dart';
+import 'authentification_pages/signup.dart';
+import 'authentification_pages/login.dart';
+import 'authentification_pages/auth_page.dart';
 import 'firebase_options.dart';
 import "package:flutter_jailbreak_detection/flutter_jailbreak_detection.dart";
 

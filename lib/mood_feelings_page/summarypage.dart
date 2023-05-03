@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import '../home.dart';
 
 class SummaryPage extends StatelessWidget {
   final String activity;

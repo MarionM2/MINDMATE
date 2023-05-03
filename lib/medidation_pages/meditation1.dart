@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'meditation2.dart';
-import 'anonymouschat.dart';
-import 'home.dart';
+import '../chat_pages/anonymouschat.dart';
+import '../home.dart';
 import 'package:helloworld/Diary_notes/first_diary_page.dart';
-import 'findnearsthelp.dart';
-import 'calendar.dart';
+import '../map/findnearsthelp.dart';
+import '../appointment_pages/calendar.dart';
 
 void main() {
   runApp(MyApp());

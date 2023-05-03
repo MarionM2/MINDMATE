@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'chatroom.dart';
-import 'home.dart';
+import '../home.dart';
 import 'chat_firebase.dart';
 
 class MyChatPage extends StatelessWidget {

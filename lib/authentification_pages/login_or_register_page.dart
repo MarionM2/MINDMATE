@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:helloworld/login.dart';
-import 'package:helloworld/signup.dart';
+import 'package:helloworld/authentification_pages/login.dart';
+import 'package:helloworld/authentification_pages/signup.dart';
 
 class LoginOrRegisterPage extends StatefulWidget {
   const LoginOrRegisterPage({super.key});

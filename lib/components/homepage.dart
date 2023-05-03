@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:helloworld/activities.dart';
+import 'package:helloworld/mood_feelings_page/activities.dart';
 import 'package:flutter/material.dart';
-import '/mood.dart';
+import '../mood_feelings_page/mood.dart';
 // import 'package:hellowoactivities.dart';
 
 // class HomePage extends StatelessWidget {

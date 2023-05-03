@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'anonymouschat.dart';
-import 'talktoaprofessional.dart';
-import 'meditation1.dart';
-import 'meditation2.dart';
-import 'home.dart';
+import '../chat_pages/anonymouschat.dart';
+import '../medidation_pages/meditation1.dart';
+import '../medidation_pages/meditation2.dart';
+import '../home.dart';
 
 class User {
   final String name;

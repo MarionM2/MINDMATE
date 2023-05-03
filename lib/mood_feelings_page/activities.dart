@@ -51,27 +51,30 @@ class _ActivityPageState extends State<ActivityPage> {
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 16.0, right: 2, left: 2),
-        child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
-            childAspectRatio: 1,
-            mainAxisSpacing: 1.0,
-            crossAxisSpacing: 1.0,
+        child: SizedBox(
+          // height: 16,
+          child: GridView.builder(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 3,
+              childAspectRatio: 1,
+              mainAxisSpacing: 1.0,
+              crossAxisSpacing: 1.0,
+            ),
+            itemCount: _activityStatus.length,
+            itemBuilder: (context, index) {
+              final activity = _activityStatus.keys.toList()[index];
+              return GridTile(
+                child: _buildActivityButton(activity),
+              );
+            },
           ),
-          itemCount: _activityStatus.length,
-          itemBuilder: (context, index) {
-            final activity = _activityStatus.keys.toList()[index];
-            return GridTile(
-              child: _buildActivityButton(activity),
-            );
-          },
         ),
       ),
       bottomNavigationBar: BottomAppBar(
         child: Padding(
           // padding: EdgeInsets.all(5.0),
           padding: EdgeInsets.fromLTRB(
-              10.0, 10.0, 10.0, 80.0), // <-- add padding here
+              10.0, 10.0, 10.0, 60.0), // <-- add padding here
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [

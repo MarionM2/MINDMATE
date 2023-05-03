@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:helloworld/chat_firebase.dart';
+import 'package:helloworld/chat_pages/chat_firebase.dart';
 
 void main() {
   testWidgets('ChatRoomPage sends and receives messages',

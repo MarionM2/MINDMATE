@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:helloworld/login.dart';
-import 'package:helloworld/login_or_register_page.dart';
-import 'package:helloworld/signup.dart';
-import './components/homepage.dart';
+import 'package:helloworld/authentification_pages/login.dart';
+import 'package:helloworld/authentification_pages/login_or_register_page.dart';
+import 'package:helloworld/authentification_pages/signup.dart';
+import '../components/homepage.dart';
 import 'package:helloworld/main.dart';
 
 class AuthPage extends StatelessWidget {
