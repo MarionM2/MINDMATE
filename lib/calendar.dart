@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:intl/intl.dart';
+import 'meditation1.dart';
 
 class EventCalendarScreen extends StatefulWidget {
   const EventCalendarScreen({Key? key}) : super(key: key);
@@ -140,8 +141,16 @@ class _EventCalendarScreenState extends State<EventCalendarScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 80, 165, 94),
         centerTitle: true,
         title: const Text('Booking Calendar'),
+        leading: IconButton(
+        icon: const Icon(Icons.arrow_back),
+        onPressed: () {
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (_) => MyChatPage()));
+              },
+  ),
       ),
       body: Column(
         children: [
@@ -194,6 +203,7 @@ class _EventCalendarScreenState extends State<EventCalendarScreen> {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => _showAddEventDialog(),
         label: const Text('Add Event'),
+        backgroundColor: Color.fromARGB(255, 80, 165, 94),
       ),
     );
   }
