@@ -1,5 +1,5 @@
 # MINDMATE COHORT2 GROUP3
-A new Flutter project created with https://flutlab.io
+A new Flutter project for Mental health
 
 ## Group members 
 - Maxine Beni 
