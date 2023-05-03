@@ -41,7 +41,7 @@ dependencies:
   latlong2: ^0.8.1
   geolocator: ^9.0.2
   geocoding: any
-
+  flutter_jailbreak_detection: any
 
 
 dev_dependencies:

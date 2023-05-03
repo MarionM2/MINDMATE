@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Hp\\Desktop\\push\\MINDMATE\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Hp\\Desktop\\pleasse\\MINDMATE\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\8ac4cdc8ddbb3d33325da378eabb8288\\transformed\\jetified-play-services-base-18.1.0\\res\\values\\values.xml",
@@ -61,6 +61,25 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Hp\\Desktop\\pleasse\\MINDMATE\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "176,821",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "472,987"
+                    },
+                    "to": {
+                        "startLines": "139,144",
+                        "startColumns": "4,4",
+                        "startOffsets": "9807,10104",
+                        "endLines": "143,146",
+                        "endColumns": "12,12",
+                        "endOffsets": "10099,10268"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\6939cc47875af9510d8c5eaf507d2cbe\\transformed\\browser-1.4.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -109,25 +128,6 @@
                         "startOffsets": "6879",
                         "endColumns": "42",
                         "endOffsets": "6917"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Hp\\Desktop\\push\\MINDMATE\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "176,821",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "472,987"
-                    },
-                    "to": {
-                        "startLines": "139,144",
-                        "startColumns": "4,4",
-                        "startOffsets": "9807,10104",
-                        "endLines": "143,146",
-                        "endColumns": "12,12",
-                        "endOffsets": "10099,10268"
                     }
                 },
                 {
