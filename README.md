@@ -15,6 +15,7 @@ A new Flutter project for Mental health
 - [Figma](https://www.figma.com/file/bZrpkDFsk7z4EOkMSnx2wB/MindMate?node-id=0%3A1&t=DsTeduDpO92YTOks-1)
 - [Documentation](https://docs.google.com/document/d/1t7JahvtBWPKNP9izKnB4ifTx9BT7n9GqbLck7robvbw/edit?usp=sharing)
 - [Video presentation](https://www.youtube.com/watch?v=q7WdV6YupxU&ab_channel=MELISSAGIRAMATA)
+- [Firebase app distribution invite link](https://appdistribution.firebase.dev/i/6a61098c5be490fb)
 
 ## How to run the app
 
