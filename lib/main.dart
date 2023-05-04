@@ -6,27 +6,27 @@ import 'authentification_pages/signup.dart';
 import 'authentification_pages/login.dart';
 import 'authentification_pages/auth_page.dart';
 import 'firebase_options.dart';
-//import "package:flutter_jailbreak_detection/flutter_jailbreak_detection.dart";
+import "package:flutter_jailbreak_detection/flutter_jailbreak_detection.dart";
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   WidgetsFlutterBinding.ensureInitialized();
-  //bool isJailbroken = await FlutterJailbreakDetection.jailbroken;
+  bool isJailbroken = await FlutterJailbreakDetection.jailbroken;
 
   // If the device is jailbroken, show an error message and exit the app
-  //if (isJailbroken) {
-    //print("This app cannot run on a jailbroken device.");
-   // runApp(MaterialApp(
-      //home: Scaffold(
-        //body: Center(
-          //child: Text(
-             // "This app cannot run on a Jailbroken or rooted devices have more privileges and enable easy installation of malware and viruses."),
-        //),
-      //),
-    //));
-    //return;
-  //}
+  if (isJailbroken) {
+    print("This app cannot run on a jailbroken device.");
+    runApp(MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Text(
+              "This app cannot run on a Jailbroken or rooted devices have more privileges and enable easy installation of malware and viruses."),
+        ),
+      ),
+    ));
+    return;
+  }
 
   runApp(MyApp());
 }

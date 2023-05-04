@@ -45,57 +45,61 @@ class _ActivityPageState extends State<ActivityPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('What have you been up to?'),
-        centerTitle: true,
-      ),
-      body: Padding(
-        padding: const EdgeInsets.only(top: 16.0, right: 2, left: 2),
-        child: SizedBox(
-          // height: 16,
-          child: GridView.builder(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
-              childAspectRatio: 1,
-              mainAxisSpacing: 1.0,
-              crossAxisSpacing: 1.0,
+        appBar: AppBar(
+          title: Text('What have you been up to?'),
+          centerTitle: true,
+        ),
+        body: Padding(
+          padding: const EdgeInsets.only(top: 13.0, right: 2, left: 2),
+          child: SizedBox(
+            // height: 16,
+            child: GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                childAspectRatio: 1,
+                mainAxisSpacing: 1.0,
+                crossAxisSpacing: 1.0,
+              ),
+              itemCount: _activityStatus.length,
+              itemBuilder: (context, index) {
+                final activity = _activityStatus.keys.toList()[index];
+                return GridTile(
+                  child: _buildActivityButton(activity),
+                );
+              },
             ),
-            itemCount: _activityStatus.length,
-            itemBuilder: (context, index) {
-              final activity = _activityStatus.keys.toList()[index];
-              return GridTile(
-                child: _buildActivityButton(activity),
-              );
-            },
           ),
         ),
-      ),
-      bottomNavigationBar: BottomAppBar(
-        child: Padding(
-          // padding: EdgeInsets.all(5.0),
-          padding: EdgeInsets.fromLTRB(
-              10.0, 10.0, 10.0, 60.0), // <-- add padding here
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                controller: _noteController,
-                decoration: InputDecoration(
-                  hintText: 'Add notes',
+        bottomNavigationBar: SizedBox(
+          // height: 200,
+          child: Expanded(
+            child: BottomAppBar(
+              child: Padding(
+                // padding: EdgeInsets.all(5.0),
+                padding: const EdgeInsets.fromLTRB(
+                    10.0, 10.0, 10.0, 150.0), // <-- add padding here
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    TextField(
+                      controller: _noteController,
+                      decoration: InputDecoration(
+                        hintText: 'Add notes',
+                      ),
+                    ),
+                    SizedBox(height: 10.0),
+                    ElevatedButton(
+                      child: Text('Save'),
+                      onPressed: () {
+                        _saveNote();
+                      },
+                    ),
+                  ],
                 ),
               ),
-              SizedBox(height: 10.0),
-              ElevatedButton(
-                child: Text('Save'),
-                onPressed: () {
-                  _saveNote();
-                },
-              ),
-            ],
+            ),
           ),
-        ),
-      ),
-    );
+        ));
   }
 
   Widget _buildActivityButton(String activity) {

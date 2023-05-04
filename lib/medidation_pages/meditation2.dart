@@ -56,12 +56,12 @@ class _ProductPageState extends State<ProductPage> {
             width: MediaQuery.of(context).size.width,
             color: Color.fromARGB(255, 114, 163, 117),
             child: Container(
-              margin: EdgeInsets.only(right: 40, top: 20, bottom: 20),
+              // margin: EdgeInsets.only(right: 20, top: 10, bottom: 10, left: 20),
               alignment: Alignment.centerLeft,
               decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage('assets/images/path.png'),
-                      fit: BoxFit.contain)),
+                      fit: BoxFit.fill)),
             ),
           ),
           Column(
@@ -90,7 +90,7 @@ class _ProductPageState extends State<ProductPage> {
                       Row(
                         children: <Widget>[
                           Container(
-                            padding: const EdgeInsets.only(left: 20),
+                            padding: const EdgeInsets.only(left: 10),
                             width: MediaQuery.of(context).size.width * 0.7,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -109,76 +109,59 @@ class _ProductPageState extends State<ProductPage> {
                                 const SizedBox(
                                   height: 10,
                                 ),
-                                Container(
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.9,
-                                  margin: const EdgeInsets.only(right: 20),
-                                  padding: const EdgeInsets.symmetric(
-                                      vertical: 5, horizontal: 20),
-                                  decoration: const BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(40)),
-                                  ),
-                                  child: Row(
-                                    children: const <Widget>[
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      Icon(
-                                        Icons.search,
-                                        size: 30,
-                                      ),
-                                      SizedBox(
-                                        width: 20,
-                                      ),
-                                      Expanded(
-                                        child: TextField(
-                                          decoration: InputDecoration(
-                                              border: InputBorder.none,
-                                              hintText: 'Search',
-                                              hintStyle: TextStyle(
-                                                fontSize: 20,
-                                              )),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                )
+                                // Container(
+                                //   width:
+                                //       MediaQuery.of(context).size.width * 0.9,
+                                //   margin: const EdgeInsets.only(right: 20),
+                                //   padding: const EdgeInsets.symmetric(
+                                //       vertical: 5, horizontal: 20),
+                                //   decoration: const BoxDecoration(
+                                //     color: Colors.white,
+                                //     borderRadius:
+                                //         BorderRadius.all(Radius.circular(40)),
+                                //   ),
+                                // child: Row(
+                                //   children: const <Widget>[
+                                //     SizedBox(
+                                //       height: 10,
+                                //     ),
+                                //     Icon(
+                                //       Icons.search,
+                                //       size: 30,
+                                //     ),
+                                //     SizedBox(
+                                //       width: 20,
+                                //     ),
+                                //     Expanded(
+                                //       child: TextField(
+                                //         decoration: InputDecoration(
+                                //             border: InputBorder.none,
+                                //             hintText: 'Search',
+                                //             hintStyle: TextStyle(
+                                //               fontSize: 20,
+                                //             )),
+                                //       ),
+                                //     )
+                                //   ],
+                                // ),
+                                // )
                               ],
                             ),
                           ),
                           Expanded(
                             child: Container(
-                              padding: const EdgeInsets.all(70),
+                              padding: const EdgeInsets.all(50),
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: AssetImage(
                                           'assets/images/$selectedImg.png'),
                                       fit: BoxFit.contain)),
                             ),
-                          )
+                          ),
                         ],
                       ),
                       const SizedBox(
                         height: 25,
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        padding: const EdgeInsets.all(10),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: <Widget>[
-                                sessionWidget('Session 1', true),
-                                sessionWidget('Session 2', false),
-                              ],
-                            ),
-                          ],
-                        ),
                       ),
                       Container(
                         padding: const EdgeInsets.symmetric(
@@ -207,12 +190,22 @@ class _ProductPageState extends State<ProductPage> {
                             ]),
                         child: Column(
                           children: <Widget>[
-                            Container(
-                              padding: const EdgeInsets.all(50),
-                              decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage(
-                                          'assets/images/$selectedImg.png'))),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MentalHealthResourcesPage()),
+                                );
+                              },
+                              child: Container(
+                                padding: const EdgeInsets.all(30),
+                                decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: AssetImage(
+                                            'assets/images/$selectedImg.png'))),
+                              ),
                             ),
                             GestureDetector(
                                 onTap: () {
@@ -231,26 +224,26 @@ class _ProductPageState extends State<ProductPage> {
                                       Text(
                                         'Basics 2',
                                         style: TextStyle(
-                                            fontSize: 22,
+                                            fontSize: 19,
                                             fontWeight: FontWeight.w700),
                                       ),
                                       Text(
                                         'Start and deepen your patience',
                                         style: TextStyle(
-                                            fontSize: 20,
+                                            fontSize: 15,
                                             fontWeight: FontWeight.w600),
                                       )
                                     ],
                                   ),
                                 )),
-                            IconButton(
-                              onPressed: () {},
-                              icon: const Icon(
-                                Icons.lock_outline,
-                                size: 30,
-                                color: Colors.black,
-                              ),
-                            )
+                            // IconButton(
+                            //   onPressed: () {},
+                            //   icon: const Icon(
+                            //     Icons.lock_outline,
+                            //     size: 30,
+                            //     color: Colors.black,
+                            //   ),
+                            // )
                           ],
                         ),
                       ),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-
 class MentalHealthResourcesPage extends StatelessWidget {
   const MentalHealthResourcesPage({Key? key}) : super(key: key);
 
@@ -11,7 +10,7 @@ class MentalHealthResourcesPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Mental Health Resources'),
         backgroundColor: const Color.fromARGB(255, 80, 165, 94),
-        centerTitle: true,   
+        centerTitle: true,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -25,26 +24,29 @@ class MentalHealthResourcesPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
             const Text(
               'Here are some resources for mental health support and information:',
               style: TextStyle(
-                fontSize: 18, 
+                fontSize: 18,
               ),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
             _buildResourceLink(
               'Trauma Informed Yoga',
               'https://www.exhaletoinhale.org/classes/',
             ),
+            const SizedBox(height: 20),
             _buildResourceLink(
               'National Institute of Mental Health (NIMH)',
               'https://www.nimh.nih.gov/',
             ),
+            const SizedBox(height: 20),
             _buildResourceLink(
               'MentalHealth.gov',
               'https://www.mentalhealth.gov/',
             ),
+            const SizedBox(height: 20),
             _buildResourceLink(
               'Crisis Text Line',
               'https://www.crisistextline.org/',
@@ -75,7 +77,4 @@ class MentalHealthResourcesPage extends StatelessWidget {
       throw 'Could not launch $url';
     }
   }
-  
-  
 }
-

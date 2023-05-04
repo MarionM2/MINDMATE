@@ -12,20 +12,20 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\Hp\Desktop\push\MINDMATE\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\Hp\Desktop\push\MINDMATE\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->C:\Users\Hp\Desktop\pleasse\MINDMATE\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\Hp\Desktop\pleasse\MINDMATE\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-15-->[:geolocator_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-77
-15-->[:geolocator_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-74
+15-->[:geolocator_android] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-77
+15-->[:geolocator_android] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-74
 16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-16-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
-16-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-78
+16-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+16-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-78
 17    <uses-permission android:name="android.permission.VIBRATE" />
-17-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-66
-17-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-63
+17-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-66
+17-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-63
 18    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-18-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
-18-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
+18-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
+18-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 19-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:26:5-79
 19-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:26:22-76
@@ -82,43 +82,43 @@
 64            android:value="2" />
 65
 66        <service
-66-->[:firebase_database] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+66-->[:firebase_database] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 67            android:name="com.google.firebase.components.ComponentDiscoveryService"
-67-->[:firebase_database] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+67-->[:firebase_database] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 68            android:directBootAware="true"
 68-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Hp\.gradle\caches\transforms-3\9c658d9b7985782e34b21ce787e45741\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
 69            android:exported="false" >
 69-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:68:13-37
 70            <meta-data
-70-->[:firebase_database] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+70-->[:firebase_database] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 71                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
-71-->[:firebase_database] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
+71-->[:firebase_database] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
 72                android:value="com.google.firebase.components.ComponentRegistrar" />
-72-->[:firebase_database] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+72-->[:firebase_database] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 73            <meta-data
-73-->[:cloud_firestore] C:\Users\Hp\Desktop\push\MINDMATE\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+73-->[:cloud_firestore] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 74                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-74-->[:cloud_firestore] C:\Users\Hp\Desktop\push\MINDMATE\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
+74-->[:cloud_firestore] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
 75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[:cloud_firestore] C:\Users\Hp\Desktop\push\MINDMATE\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+75-->[:cloud_firestore] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 76            <meta-data
-76-->[:firebase_auth] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+76-->[:firebase_auth] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-77-->[:firebase_auth] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+77-->[:firebase_auth] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[:firebase_auth] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+78-->[:firebase_auth] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 79            <meta-data
-79-->[:firebase_storage] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+79-->[:firebase_storage] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 80                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
-80-->[:firebase_storage] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
+80-->[:firebase_storage] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
 81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[:firebase_storage] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+81-->[:firebase_storage] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 82            <meta-data
-82-->[:firebase_core] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+82-->[:firebase_core] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 83                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-83-->[:firebase_core] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+83-->[:firebase_core] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[:firebase_core] C:\Users\Hp\Desktop\push\MINDMATE\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+84-->[:firebase_core] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 85            <meta-data
 85-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:69:13-71:85
 86                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -145,47 +145,47 @@
 96-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Hp\.gradle\caches\transforms-3\46b1aeb25bd808481ced9eb6cf2ee7fb\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:33:17-82
 97        </service>
 98        <service
-98-->[:geolocator_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:56
+98-->[:geolocator_android] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:56
 99            android:name="com.baseflow.geolocator.GeolocatorLocationService"
-99-->[:geolocator_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-77
+99-->[:geolocator_android] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-77
 100            android:enabled="true"
-100-->[:geolocator_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-35
+100-->[:geolocator_android] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-35
 101            android:exported="false"
-101-->[:geolocator_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-37
+101-->[:geolocator_android] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-37
 102            android:foregroundServiceType="location" />
-102-->[:geolocator_android] C:\Users\Hp\Desktop\push\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-53
+102-->[:geolocator_android] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-53
 103
 104        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
-104-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-106
-104-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:19-103
+104-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-106
+104-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:19-103
 105        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
-105-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-20:20
-105-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-107
+105-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-20:20
+105-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-107
 106            <intent-filter>
-106-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-19:29
+106-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-19:29
 107                <action android:name="android.intent.action.BOOT_COMPLETED" />
-107-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-79
-107-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:25-76
+107-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-79
+107-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:25-76
 108                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-108-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-84
-108-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:25-81
+108-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-84
+108-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:25-81
 109                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-109-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-82
-109-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:25-79
+109-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-82
+109-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:25-79
 110                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-110-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-82
-110-->[:flutter_local_notifications] C:\Users\Hp\Desktop\push\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:25-79
+110-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-82
+110-->[:flutter_local_notifications] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:25-79
 111            </intent-filter>
 112        </receiver>
 113
 114        <activity
-114-->[:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+114-->[:url_launcher_android] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
 115            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-115-->[:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+115-->[:url_launcher_android] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
 116            android:exported="false"
-116-->[:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+116-->[:url_launcher_android] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
 117            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-117-->[:url_launcher_android] C:\Users\Hp\Desktop\push\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+117-->[:url_launcher_android] C:\Users\Hp\Desktop\pleasse\MINDMATE\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
 118        <activity
 118-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\Hp\.gradle\caches\transforms-3\ef7c25b146c6e897743a3f590ad0a49a\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:29:9-46:20
 119            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
