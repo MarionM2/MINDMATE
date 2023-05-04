@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
-import '/mood.dart';
+import '../mood_feelings_page/mood.dart';
 
 class MyButton extends StatelessWidget {
-  const MyButton({super.key, });
+  const MyButton({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-                Navigator.pushReplacement(
-                    context, MaterialPageRoute(builder: (_) => MyHome(title: 'Mind Mate',)));
-      },
+        onTap: () {
+          Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                  builder: (_) => MyHome(
+                        title: 'Mind Mate',
+                      )));
+        },
         child: Container(
             padding: EdgeInsets.all(8),
             margin: EdgeInsets.symmetric(horizontal: 100),

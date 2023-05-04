@@ -1,5 +1,5 @@
 import 'dart:async';
-import './signup.dart';
+import 'authentification_pages/signup.dart';
 import 'package:flutter/material.dart';
 import 'main.dart';
 

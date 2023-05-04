@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:helloworld/auth_page.dart';
+import 'package:helloworld/authentification_pages/auth_page.dart';
 import 'package:helloworld/components/homepage.dart';
-import 'package:helloworld/signup.dart';
+import 'package:helloworld/authentification_pages/signup.dart';
 
 class MyButton extends StatelessWidget {
   final Function()? onTap;
