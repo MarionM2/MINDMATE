@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:intl/intl.dart';
-import '../medidation_pages/meditation1.dart';
+import '/home.dart';
 
 class EventCalendarScreen extends StatefulWidget {
   const EventCalendarScreen({Key? key}) : super(key: key);
@@ -33,20 +33,20 @@ class _EventCalendarScreenState extends State<EventCalendarScreen> {
 
   loadPreviousEvents() {
     mySelectedEvents = {
-      "2023-04-24": [
+      "2023-05-24": [
         {
           "eventDescp": "Meeting with Counsellor Okeno",
           "eventTitle": "First Visit"
         },
         {"eventDescp": "22", "eventTitle": "22"}
       ],
-      "2023-04-23": [
+      "2023-05-23": [
         {
           "eventDescp": "Second Visit with Counsellor Okeno",
           "eventTitle": "Second Visit"
         }
       ],
-      "2023-04-22": [
+      "2023-05-22": [
         {"eventTitle": "Getting feedback", "eventDescp": "Last Visit"}
       ]
     };
@@ -154,7 +154,7 @@ class _EventCalendarScreenState extends State<EventCalendarScreen> {
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.pushReplacement(
-                context, MaterialPageRoute(builder: (_) => MyChatPage()));
+                context, MaterialPageRoute(builder: (_) => myHomePage()));
           },
         ),
       ),

@@ -8,6 +8,8 @@ import '../map/findnearsthelp.dart';
 import '../appointment_pages/calendar.dart';
 
 class MyChatPage extends StatelessWidget {
+  const MyChatPage({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {

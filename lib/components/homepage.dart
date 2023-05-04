@@ -92,11 +92,11 @@ class _MyHomeState extends State<MyHome> {
               Padding(
                 padding: const EdgeInsets.all(3.1),
                 child: GestureDetector(
-                 onTap:(){
-                  setState(() {     
-                    youareFeeling = 'Good';
-                  });
-                 }, 
+                    onTap: () {
+                      setState(() {
+                        youareFeeling = 'Good';
+                      });
+                    },
                     child: Container(
                         padding: EdgeInsets.all(8),
                         margin: EdgeInsets.symmetric(horizontal: 10),
@@ -119,11 +119,11 @@ class _MyHomeState extends State<MyHome> {
               Padding(
                 padding: const EdgeInsets.all(3.1),
                 child: GestureDetector(
-                  onTap:(){
-                  setState(() {     
-                    youareFeeling = 'Okay';
-                  });
-                 }, 
+                    onTap: () {
+                      setState(() {
+                        youareFeeling = 'Okay';
+                      });
+                    },
                     child: Container(
                         padding: EdgeInsets.all(8),
                         margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -146,11 +146,11 @@ class _MyHomeState extends State<MyHome> {
               Padding(
                 padding: const EdgeInsets.all(3.1),
                 child: GestureDetector(
-                  onTap:(){
-                  setState(() {     
-                    youareFeeling = 'Bad';
-                  });
-                 }, 
+                    onTap: () {
+                      setState(() {
+                        youareFeeling = 'Bad';
+                      });
+                    },
                     child: Container(
                         padding: EdgeInsets.all(8),
                         margin: EdgeInsets.symmetric(horizontal: 10),
@@ -174,12 +174,18 @@ class _MyHomeState extends State<MyHome> {
                 height: 20.0,
               ),
               if (youareFeeling != null)
-              Text('youareFeeling: $youareFeeling'),
-         InkWell(
+                Text(
+                  'you are Feeling: $youareFeeling',
+                  style: TextStyle(
+                      color: Colors.green,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold),
+                ),
+              InkWell(
                   onTap: () {
-                  if (youareFeeling != null) {
-                  print('Selected option: $youareFeeling');
-                  }
+                    if (youareFeeling != null) {
+                      print('Selected option: $youareFeeling');
+                    }
                     Navigator.pushReplacement(
                         context, MaterialPageRoute(builder: (_) => MyApp()));
                   },
@@ -191,11 +197,12 @@ class _MyHomeState extends State<MyHome> {
                           AssetImage("assets/images/save.png"),
                           size: 30,
                         ),
-                         SizedBox(height: 8), // Add some space between the image and text
-                         Text('Save'),
-                       // <-- Icon
-                      ])), 
-
+                        SizedBox(
+                            height:
+                                8), // Add some space between the image and text
+                        Text('Continue'),
+                        // <-- Icon
+                      ])),
             ]),
       ),
     );
