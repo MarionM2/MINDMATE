@@ -77,7 +77,7 @@ class _ActivityPageState extends State<ActivityPage> {
               child: Padding(
                 // padding: EdgeInsets.all(5.0),
                 padding: const EdgeInsets.fromLTRB(
-                    10.0, 10.0, 10.0, 150.0), // <-- add padding here
+                    10.0, 10.0, 10.0, 90.0), // <-- add padding here
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
