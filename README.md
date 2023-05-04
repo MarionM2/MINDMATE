@@ -18,8 +18,8 @@ A new Flutter project for Mental health
 
 ## How to run the app
 
-Since we used flutter jailbreak to protect our device from viruses and malware. You might need to comment out that piece of code in the main to allow it to run on the emulator or phone. Here is details of an emulator that worked with jalibreak:
-
+Since we used flutter jailbreak to protect our device from viruses and malware. You might need to comment out that piece of code in the main to allow it to run on the emulator or phone. Alternatively , Here is details of an emulator that worked with jalibreak:
+*Run command : flutter run*
 Properties
 
 - avd.ini.displayname              phone
