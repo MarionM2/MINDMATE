@@ -21,7 +21,7 @@ void main() async {
       home: Scaffold(
         body: Center(
           child: Text(
-              "This app cannot run on a Jailbroken or rooted devices have more privileges and enable easy installation of malware and viruses."),
+              "This app cannot run on a Jailbroken or rooted devices,You phone has more privileges and enable easy installation of malware and viruses."),
         ),
       ),
     ));
