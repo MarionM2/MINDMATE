@@ -10,11 +10,60 @@ A new Flutter project for Mental health
 - [Project Tracker](https://docs.google.com/spreadsheets/d/1II3q7wnMt6v44dDY4I1ewVctd6EWvGQ4VenjHc3_5Z0/edit?usp=sharing)
 
 
-## Other relevant resources:
+## Other relevant documents:
 - [Proposal](https://docs.google.com/document/d/1IKN0iqFb0ao3p1dpSfxVgEzQwNhwkbInvUVkQEFHsHo/edit?usp=sharing)
 - [Figma](https://www.figma.com/file/bZrpkDFsk7z4EOkMSnx2wB/MindMate?node-id=0%3A1&t=DsTeduDpO92YTOks-1)
 - [Documentation](https://docs.google.com/document/d/1t7JahvtBWPKNP9izKnB4ifTx9BT7n9GqbLck7robvbw/edit?usp=sharing)
 - Video presentation
+
+## How to run the app
+
+Since we used flutter jailbreak to protect our device from viruses and malware. You might need to comment out that piece of code in the main to allow it to run on the emulator or phone. Here is details of an emulator that worked with jalibreak:
+
+Properties
+avd.ini.displayname              phone
+avd.ini.encoding                 UTF-8
+AvdId                            phone
+disk.dataPartition.size          6442450944
+fastboot.chosenSnapshotFile
+fastboot.forceChosenSnapshotBoot no
+fastboot.forceColdBoot           no
+fastboot.forceFastBoot           yes
+hw.accelerometer                 yes
+hw.arc                           false
+hw.audioInput                    yes
+hw.battery                       yes
+hw.camera.back                   virtualscene
+hw.camera.front                  emulated
+hw.cpu.ncore                     4
+hw.device.hash2                  MD5:8a60718609e0741c7c0cc225f49c5590
+hw.device.manufacturer           Google
+hw.device.name                   pixel_3
+hw.dPad                          no
+hw.gps                           yes
+hw.gpu.enabled                   yes
+hw.gpu.mode                      auto
+hw.initialOrientation            Portrait
+hw.keyboard                      yes
+hw.lcd.density                   440
+hw.lcd.height                    2160
+hw.lcd.width                     1080
+hw.mainKeys                      no
+hw.ramSize                       1536
+hw.sdCard                        yes
+hw.sensors.orientation           yes
+hw.sensors.proximity             yes
+hw.trackBall                     no
+image.androidVersion.api         26
+image.sysdir.1                   system-images\android-26\google_apis_playstore\x86\
+PlayStore.enabled                true
+runtime.network.latency          none
+runtime.network.speed            full
+showDeviceFrame                  yes
+skin.dynamic                     yes
+tag.display                      Google Play
+tag.id                           google_apis_playstore
+vm.heapSize                      228
 
 
 ## Purpose of the application
