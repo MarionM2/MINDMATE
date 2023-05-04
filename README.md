@@ -21,49 +21,50 @@ A new Flutter project for Mental health
 Since we used flutter jailbreak to protect our device from viruses and malware. You might need to comment out that piece of code in the main to allow it to run on the emulator or phone. Here is details of an emulator that worked with jalibreak:
 
 Properties
-avd.ini.displayname              phone
-avd.ini.encoding                 UTF-8
-AvdId                            phone
-disk.dataPartition.size          6442450944
-fastboot.chosenSnapshotFile
-fastboot.forceChosenSnapshotBoot no
-fastboot.forceColdBoot           no
-fastboot.forceFastBoot           yes
-hw.accelerometer                 yes
-hw.arc                           false
-hw.audioInput                    yes
-hw.battery                       yes
-hw.camera.back                   virtualscene
-hw.camera.front                  emulated
-hw.cpu.ncore                     4
-hw.device.hash2                  MD5:8a60718609e0741c7c0cc225f49c5590
-hw.device.manufacturer           Google
-hw.device.name                   pixel_3
-hw.dPad                          no
-hw.gps                           yes
-hw.gpu.enabled                   yes
-hw.gpu.mode                      auto
-hw.initialOrientation            Portrait
-hw.keyboard                      yes
-hw.lcd.density                   440
-hw.lcd.height                    2160
-hw.lcd.width                     1080
-hw.mainKeys                      no
-hw.ramSize                       1536
-hw.sdCard                        yes
-hw.sensors.orientation           yes
-hw.sensors.proximity             yes
-hw.trackBall                     no
-image.androidVersion.api         26
-image.sysdir.1                   system-images\android-26\google_apis_playstore\x86\
-PlayStore.enabled                true
-runtime.network.latency          none
-runtime.network.speed            full
-showDeviceFrame                  yes
-skin.dynamic                     yes
-tag.display                      Google Play
-tag.id                           google_apis_playstore
-vm.heapSize                      228
+
+- avd.ini.displayname              phone
+- avd.ini.encoding                 UTF-8
+- AvdId                            phone
+- disk.dataPartition.size          6442450944
+- fastboot.chosenSnapshotFile
+- fastboot.forceChosenSnapshotBoot no
+- fastboot.forceColdBoot           no
+- fastboot.forceFastBoot           yes
+- hw.accelerometer                 yes
+- hw.arc                           false
+- hw.audioInput                    yes
+- hw.battery                       yes
+- hw.camera.back                   virtualscene
+- hw.camera.front                  emulated
+- hw.cpu.ncore                     4
+- hw.device.hash2                  MD5:8a60718609e0741c7c0cc225f49c5590
+- hw.device.manufacturer           Google
+- hw.device.name                   pixel_3
+- hw.dPad                          no
+- hw.gps                           yes
+- hw.gpu.enabled                   yes
+- hw.gpu.mode                      auto
+- hw.initialOrientation            Portrait
+- hw.keyboard                      yes
+- hw.lcd.density                   440
+- hw.lcd.height                    2160
+- hw.lcd.width                     1080
+- hw.mainKeys                      no
+- hw.ramSize                       1536
+- hw.sdCard                        yes
+- hw.sensors.orientation           yes
+- hw.sensors.proximity             yes
+- hw.trackBall                     no
+- image.androidVersion.api         26
+- image.sysdir.1                   system-images\android-26\google_apis_playstore\x86\
+- PlayStore.enabled                true
+- runtime.network.latency          none
+- runtime.network.speed            full
+- showDeviceFrame                  yes
+- skin.dynamic                     yes
+- tag.display                      Google Play
+- tag.id                           google_apis_playstore
+- vm.heapSize                      228
 
 
 ## Purpose of the application
